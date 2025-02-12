@@ -37,6 +37,7 @@ options:
 schema:
   log_level: list(debug|info|warning|error)
   branch: str
+  fork: str
   safe_mode: bool
 privileged:
   - SYS_ADMIN
