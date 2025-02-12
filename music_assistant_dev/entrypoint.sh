@@ -8,7 +8,7 @@ echo "-----------------------------------------------------------"
 echo "Music Assistant dev/nightly version"
 echo "-----------------------------------------------------------"
 echo ""
-echo "Installing latest version from $branch in $VIRTUAL_ENV"
+echo "Installing latest version from $fork, branch $branch in $VIRTUAL_ENV"
 echo ""
 source $VIRTUAL_ENV/bin/activate
 uv pip install \
