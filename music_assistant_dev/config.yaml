@@ -32,7 +32,7 @@ backup_exclude:
 options:
   log_level: info
   branch: dev
-  fork: https://github.com/Squareheads/musicassistant-server.git
+  fork: music-assistant@git+https://github.com/music-assistant/server.git
   safe_mode: false
 schema:
   log_level: list(debug|info|warning|error)
