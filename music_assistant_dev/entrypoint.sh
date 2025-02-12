@@ -1,6 +1,7 @@
 #!/bin/sh
 
 branch=$(cat /data/options.json | jq -r .branch)
+fork=$(cat /data/options.json | jq -r .fork)
 
 echo ""
 echo "-----------------------------------------------------------"
@@ -13,7 +14,7 @@ source $VIRTUAL_ENV/bin/activate
 uv pip install \
     --no-cache \
     --link-mode=copy \
-    "music-assistant@git+https://github.com/music-assistant/server.git@$branch"
+    "$fork@$branch"
 
 echo ""
 echo ""
